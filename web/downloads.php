@@ -21,6 +21,11 @@
 				<a href="documents/prezentacia.pptx" download>Prezentácia</a>
 			</p>
 
+			<p>
+				<h3>Práca.</h3>
+				<a href="documents/dusan_matejka_diplomovka.pdf" download>Práca</a>
+			</p>
+
 		</section>
 
 		<?php include 'components/aside.php';?>
