@@ -30,14 +30,11 @@
 
       <p>
         <h2>Zdroje</h2>
-        <a href="http://developer.android.com/reference/packages.html"> Android </a> <br>
-        <a href="http://docs.oracle.com/javase/7/docs/api/index.html?overview-summary.html"> Java </a> <br>
-        <a href="http://www.eclipse.org/documentation/?sess=32267642b71e61a5209ee01bb85d8fdb"> Eclipse </a> <br>
-        <a href="https://dev.mysql.com/doc/"> MySQL </a> <br>
-        <a href="https://www.python.org/doc/"> Python </a> <br>
-        <a href="http://www.w3.org/TR/xhtml1/"> XHTML </a> <br>
-        <a href="http://www.w3schools.com/cssref/"> CSS </a> <br>
-        Learn Java for Android Development (kniha)
+        <a href="documents/mote_carlo_localization.pdf" target="_blank">Robust Monte Carlo localization for mobile robots</a> <br>
+        <a href="documents/probablistic_map_review.pdf" target="_blank">Mobile Robot Localization: A Review of Probabilistic Map- Based Techniques</a> <br>
+        <a href="documents/map_based_navigation.pdf" target="_blank">Map-based navigation in mobile robots</a> <br>
+        PROBABILISTIC ROBOTICS (kniha)<br>
+        The CUDA HANDBOOK. A Comprehensive Guide to GPU Programming (kniha)
       </p>
 
       <p>

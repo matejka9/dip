@@ -17,8 +17,8 @@
 		<section>
 			<p>
 				<h3>Zadanie diplomovej práce.</h3>
-				<a href="matejka_zadanie.pdf" download>Zadanie</a> <br>
-				<a href="prezentacia.pptx" download>Prezentácia</a>
+				<a href="documents/matejka_zadanie.pdf" download>Zadanie</a> <br>
+				<a href="documents/prezentacia.pptx" download>Prezentácia</a>
 			</p>
 
 		</section>
