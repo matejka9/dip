@@ -12,7 +12,7 @@
 			<h1>Kontaktné údaje</h1>
 		</header>
 
-		<?php include 'nav.php';?>
+		<?php include 'components/nav.php';?>
 
 		<section>
 			<p>Dušan Matejka<br>
