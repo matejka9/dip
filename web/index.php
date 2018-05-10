@@ -33,6 +33,7 @@
         <a href="documents/mote_carlo_localization.pdf" target="_blank">Robust Monte Carlo localization for mobile robots</a> <br>
         <a href="documents/probablistic_map_review.pdf" target="_blank">Mobile Robot Localization: A Review of Probabilistic Map- Based Techniques</a> <br>
         <a href="documents/map_based_navigation.pdf" target="_blank">Map-based navigation in mobile robots</a> <br>
+        <a href="https://watermark.silverchair.com/gkx1313.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAZ4wggGaBgkqhkiG9w0BBwagggGLMIIBhwIBADCCAYAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMGa04uL3lz4YnroDXAgEQgIIBUcB1pmQiXmWYedIJqNDzLX5EzD75SQvFTIgVoJ9sgox9Cl3c1iBZHcA55Cp51FomBUu0icVsO1fQMSozLqowOZpkm-jkmGf93HZktLh4_gDLvpWiX9M1jpyGO7BXx33hGzsIGPnTK6TyN8yMe-OZZOw5ov6kqzqfP_piP0Hfp7hRbR0jpjmfUdTfv_NZ628qjUE0y-3RDDv8dfE4pskkMJ-cF9H-QfGYxHO2WCFTjhEMgM8U4C6DnwvD7sN6VX7rPG68hPwpJwmMgPnIYTY8KSRVQmALv2D4oc87_IrLMsuQKGJvttv9WCv_Eaw5s39t1L-h4CZBV0CHVxXbcObvXpzPorD6k45TkOsPOD3bocVP4ZJE6yjs2Pl93JDNE9Z7PsF8xGrh2pj2g-ckVNExwbkoIRv3cY7yH3rqvQL-vt3UctELY098XAN9N5c_jB2Xgmo" target="_blank">HipMCL: a high-performance parallel implementation of the Markov clustering algorithm for large-scale networks</a> <br>
         PROBABILISTIC ROBOTICS (kniha)<br>
         The CUDA HANDBOOK. A Comprehensive Guide to GPU Programming (kniha)
       </p>

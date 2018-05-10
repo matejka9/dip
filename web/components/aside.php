@@ -3,6 +3,6 @@
     Diplomová práca
   </h2>
   <p>
-    Mgr. Pavel Petrovič, PhD.
+    Školitel: Mgr. Pavel Petrovič, PhD.
   </p>
 </aside>
