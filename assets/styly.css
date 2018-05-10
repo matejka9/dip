@@ -1,0 +1,111 @@
+body {
+	background-color: #AAAAAA;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+header {
+	background-color: #333333;
+}
+header h1 {
+	color: #FFFFFF;
+	margin: 0;
+}
+nav {
+	background-color: #111111;
+	width: 68%;
+	float: left;
+}
+nav a {
+	background-color: #DDDDDD;
+	color: #CC3333;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 1em;
+	box-shadow: 5px 5px 10px #BBBBBB;
+}
+nav a:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+section {
+	background-color: #EEEEEE;
+	width: 68%;
+	float: left;
+}
+section h1{
+	color: #3392AF;
+}
+section h2{
+	color: #3392AF;
+}
+section h3{
+	color: #3392AF;
+}
+aside {
+	display: block;
+	margin-left: 70%;
+}
+footer {
+	color: #FFFFFF;
+	background-color: #333333;
+	font-size: 0.8em;
+	clear: both;
+}
+header, nav, section, aside, footer {
+	padding: 1%;
+}
+aside h1 {
+	color: #CC3333;
+}
+aside h2 {
+	color: #3392AF;
+}
+aside em {
+	border-bottom: #B22222 solid 2px;
+}
+section a {
+	color: #FF9898;
+	font-weight: bold;
+}
+section table {
+	width: 80%;
+	border-collapse: collapse;
+	border-top: 5px solid #B22222;
+}
+section tr {
+	border-bottom: 5px solid #B22222; 
+}
+section th, section td {
+	padding: 0.5em;
+}
+#foto {
+	width: 200px;
+}
+#cena {
+	width: 9em;
+}
+td.cena {
+	text-align: center;
+	font-weight: bold;
+}
+.nazov {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+fieldset {
+	border: 2px solid #B22222;
+	margin: 1em 0;
+}
+legend {
+	border: 2px solid #B22222;
+	background: #FFE4C4;
+	padding: 1px 0.5em;
+}
+
+div {
+  margin: 5em;
+  padding: 1.5em;
+  background: #87CEFF;
+  border-radius: 25px;
+}
