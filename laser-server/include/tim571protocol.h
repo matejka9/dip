@@ -1,0 +1,11 @@
+#ifndef LASER_TIM571PROTOCOL_H
+#define LASER_TIM571PROTOCOL_H
+
+#define START_CHAR 2
+#define END_CHAR 3
+
+#define REQUEST_ONE "sRN LMDscandata"
+#define REQUEST_REPEAT_START "sEN LMDscandata 1"
+#define REQUEST_REPEAT_END "sEN LMDscandata 0"
+
+#endif //LASER_TIM571PROTOCOL_H
