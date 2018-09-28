@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "hough_test.h"
+#include "hough.h"
 
 #define MULTIPLIER 10000
 #define FULL_ANGLE 360
