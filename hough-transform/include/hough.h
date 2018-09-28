@@ -20,7 +20,6 @@ typedef struct hough_config_struct {
   int distance_max; // 15000
   int distance_step; // 15
 
-  int angle_max; // 360
   int angle_step; // 5
 
   int votes_min; // 10

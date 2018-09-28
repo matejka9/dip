@@ -206,7 +206,6 @@ void create_test_config(hough_config *config)
   config->distance_max = 15000;
   config->distance_step = 15;
 
-  config->angle_max = 360;
   config->angle_step = 5;
 
   config->votes_min = 10;

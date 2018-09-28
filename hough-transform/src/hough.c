@@ -7,6 +7,7 @@
 #include "hough_test.h"
 
 #define MULTIPLIER 10000
+#define FULL_ANGLE 360
 #define HALF_ANGLE 180
 #define RADIAN (M_PI / HALF_ANGLE)
 
@@ -38,7 +39,7 @@ int get_distance_step_count(hough_config *config)
 
 int get_angle_step_count(hough_config *config)
 {
-  return config->angle_max / config->angle_step;
+  return FULL_ANGLE / config->angle_step;
 }
 
 int get_votes_array_size(hough_config *config)
@@ -298,14 +299,14 @@ void test_get_distance_step_count(hough_config *config)
 void test_get_angle_step_count(hough_config *config)
 {
   printf("Test get angle step count:\n");
-  printf("For angle_max %d angle_step %d => %d\n", config->angle_max, config->angle_step, get_angle_step_count(config));
+  printf("For FULL_ANGLE %d angle_step %d => %d\n", FULL_ANGLE, config->angle_step, get_angle_step_count(config));
   printf("\n");
 }
 
 void test_get_votes_array_size(hough_config *config)
 {
   printf("Test get angle step count:\n");
-  printf("For distance_max %d distance_step %d angle_max %d angle_step %d => %d\n", config->distance_max, config->distance_step, config->angle_max, config->angle_step, get_votes_array_size(config));
+  printf("For distance_max %d distance_step %d FULL_ANGLE %d angle_step %d => %d\n", config->distance_max, config->distance_step, FULL_ANGLE, config->angle_step, get_votes_array_size(config));
   printf("\n");
 }
 
