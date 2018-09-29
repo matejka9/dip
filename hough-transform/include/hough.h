@@ -2,12 +2,13 @@
 #define _HOUGH_H_
 
 #include "tim571.h"
+#include "math_2d.h"
 
-#define LINE_MAX_DATA_COUNT 10
+#define LINE_MAX_DATA_COUNT 50
 
 typedef struct line_struct {
   int distance;
-  int angle;
+  int angle;     // 0 angle is on the right side of the robot, increasing counter-clockwise
   int votes;
 } line_data;
 
@@ -29,8 +30,6 @@ typedef struct hough_config_struct {
 } hough_config;
 
 void hough_get_lines_data(hough_config *config, tim571_status_data *status_data, uint16_t *distance, uint8_t *rssi, lines_data *data);
-void printf_lines_data(lines_data *data);
-
-void test_hough_methods(hough_config *config, tim571_status_data *status_data, uint16_t *distance, uint8_t *rssi);
+void hough_print_lines_data(lines_data *data);
 
 #endif
