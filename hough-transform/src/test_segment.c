@@ -208,7 +208,7 @@ void create_test_config(segment_config *config)
 
 void create_test_lines_data(lines_data *lines)
 {
-  lines->line_count = 4;
+  lines->count = 4;
 
   lines->lines[0].distance = 880;
   lines->lines[0].angle = 228;
