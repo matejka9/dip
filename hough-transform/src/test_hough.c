@@ -196,7 +196,6 @@ void create_test_rssi(uint8_t *rssi)
   };
   for (int index = 0; index < TIM571_DATA_COUNT; index++) {
     rssi[index] = dump[index];
-
   }
 }
 
