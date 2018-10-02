@@ -2,3 +2,4 @@ obj/
 test_hough
 test_math
 test_segment
+test_corner

@@ -1,16 +1,18 @@
-#ifndef _SEGMENT_H_
-#define _SEGMENT_H_
+#ifndef _CORNER_H_
+#define _CORNER_H_
 
+#include "math_2d.h"
 #include "segment.h"
 
-#define CORNERS_MAX_DATA_COUNT 1
+#define CORNERS_MAX_DATA_COUNT 5
 
-typedef struct segments_struct {
-  segment_data segments[CORNERS_MAX_DATA_COUNT];
+typedef struct corners_struct {
+  point_2d corners[CORNERS_MAX_DATA_COUNT];
   int count;
-} segments_data;
+} corners_data;
 
-void corner_find_from_segments(segments_data *segments);
-void corner_find_from_lines(lines_data *lines);
+void corner_find_from_segments(segments_data *segments, corners_data *corners);
+void corner_find_from_lines(lines_data *lines, corners_data *corners);
+void corner_print_data(corners_data *corners);
 
 #endif
