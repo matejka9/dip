@@ -17,6 +17,7 @@ void corner_find_from_segments(segments_data *segments, corners_data *corners)
 {
   corners->count = 0;
   point_2d cross;
+  corner_data *corner;
 
   double angle, difference;
   segment_data *segment1, *segment2;
@@ -39,28 +40,23 @@ void corner_find_from_segments(segments_data *segments, corners_data *corners)
         angle -= HALF_ANGLE;
       }
 
-
       difference = PERPENDICULAR_ANGLE - angle;
       difference = difference < 0 ? -difference : difference;
 
       if (difference < MAX_TOLERANCE_ANGLE) {
-        printf("Angle %f\n", angle);
         get_normal_vector(&segment_v1, &segment_normal1);
         get_normal_vector(&segment_v2, &segment_normal2);
         normalize_vector(&segment_normal1);
         normalize_vector(&segment_normal2);
 
         find_cross_of_two_lines(&segment_normal1, &segment1->start, &segment_normal2, &segment2->start, &cross);
-        printf("Cross [%f; %f]\n", cross.x, cross.y);
-        printf("Segment1 [%f; %f] : [%f; %f]\n", segment1->start.x, segment1->start.y, segment1->end.x, segment1->end.y);
-        printf("Segment2 [%f; %f] : [%f; %f]\n", segment2->start.x, segment2->start.y, segment2->end.x, segment1->end.y);
-
-        printf("Compare %10.4f %10.4f %10.4f;\n", cross.x, segment1->start.x, segment1->end.x);
 
         if (is_point_close_to_segment(&cross, segment1) && is_point_close_to_segment(&cross, segment2)) {
-          printf("ANOOOOO\n");
           if (corners->count < CORNERS_MAX_DATA_COUNT) {
-            corners->corners[corners->count++] = cross;
+            corner = &corners->corners[corners->count++];
+            corner->corner = cross;
+            corner->segment1 = *segment1;
+            corner->segment2 = *segment2;
           } else {
             printf("Too much corners\n");
           }
@@ -70,15 +66,10 @@ void corner_find_from_segments(segments_data *segments, corners_data *corners)
   }
 }
 
-void corner_find_from_lines(lines_data *lines, corners_data *corners)
-{
-
-}
-
 void corner_print_data(corners_data *data)
 {
   printf("CornersData:\n");
   for (int index = 0; index < data->count; index++) {
-    printf("%d: Point [%12.4f; %12.4f]\n", index, data->corners[index].x, data->corners[index].y);
+    printf("%d: Point [%12.4f; %12.4f] Line1: (angle - %12.4f°, distance - %12.4f) Line2: (angle - %12.4f°, distance - %12.4f)\n", index, data->corners[index].corner.x, data->corners[index].corner.y, data->corners[index].segment1.line.angle, data->corners[index].segment1.line.distance, data->corners[index].segment2.line.angle, data->corners[index].segment2.line.distance);
   }
 }
