@@ -210,20 +210,20 @@ void create_test_lines_data(lines_data *lines)
 {
   lines->count = 4;
 
-  lines->lines[0].distance = 880;
-  lines->lines[0].angle = 228;
+  lines->lines[0].line.distance = 880;
+  lines->lines[0].line.angle = 228;
   lines->lines[0].votes = 190;
 
-  lines->lines[1].distance = 2219;
-  lines->lines[1].angle = 45;
+  lines->lines[1].line.distance = 2219;
+  lines->lines[1].line.angle = 45;
   lines->lines[1].votes = 178;
 
-  lines->lines[2].distance = 2589;
-  lines->lines[2].angle = 316;
+  lines->lines[2].line.distance = 2589;
+  lines->lines[2].line.angle = 316;
   lines->lines[2].votes = 174;
 
-  lines->lines[3].distance = 3184;
-  lines->lines[3].angle = 138;
+  lines->lines[3].line.distance = 3184;
+  lines->lines[3].line.angle = 138;
   lines->lines[3].votes = 168;
 }
 

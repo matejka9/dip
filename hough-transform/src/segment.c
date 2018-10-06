@@ -21,8 +21,8 @@ void segment_transform_points_and_lines_to_segments(segment_config *config, tim5
   segments->count = 0;
   for (int line_i = 0; line_i < lines->count; line_i++) {
     line = &lines->lines[line_i];
-    line_distance = line->distance;
-    line_angle = line->angle;
+    line_distance = line->line.distance;
+    line_angle = line->line.angle;
 
     get_line_data_from_distance_and_angle(&line_distance, &line_angle, &line_normal, &line_vector, &line_point);
 
