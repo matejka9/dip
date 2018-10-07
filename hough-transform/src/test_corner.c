@@ -42,13 +42,22 @@ void create_test_lines_data(segments_data *segments)
   segments->segments[4].length = 83.8371;
 }
 
+void create_test_config(corner_config *config)
+{
+  config->max_tolerance_angle = 5.0;
+  config->max_tolerance_distance = 20.0;
+}
+
 int main(int argc,char **argv)
 {
   corners_data results;
   segments_data segments;
-  create_test_lines_data(&segments);
+  corner_config config;
 
-  corner_find_from_segments(&segments, &results);
+  create_test_lines_data(&segments);
+  create_test_config(&config);
+
+  corner_find_from_segments(&config, &segments, &results);
   corner_print_data(&results);
 
   exit(0);
